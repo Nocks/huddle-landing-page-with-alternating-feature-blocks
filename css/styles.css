@@ -1,1 +1,91 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #808d99;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #ebfbff;
+  background-size: cover;
+  background-position: top;
+}
+header .primary .logo {
+  width: 6.5rem;
+}
+.btn-call-to-action {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: #00252e;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 28px;
+  -webkit-box-shadow: 4px 7px 14px -8px rgba(0, 37, 46, 0.2);
+  -moz-box-shadow: 4px 7px 14px -8px rgba(0, 37, 46, 0.2);
+  box-shadow: 4px 7px 14px -8px rgba(0, 37, 46, 0.2);
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    background-image: url("../images/bg-hero-mobile.svg");
+    padding: 2rem 1rem 1rem 1rem;
+    margin-bottom: 3.5rem;
+  }
+  header .primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .primary .first-call-to-action button {
+    width: 7rem;
+    padding: 9px 15px;
+    font-size: 0.8rem;
+  }
+  header .secondary {
+    margin-top: 50px;
+    color: #00252e;
+    text-align: center;
+    padding: 1rem;
+  }
+  header .secondary .message h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.4rem;
+  }
+  header .secondary .message .message-heading {
+    margin-bottom: 10px;
+  }
+  header .secondary .message button {
+    width: 14rem;
+    padding: 12px 22px;
+    font-size: 0.9rem;
+    background-color: #ff52bf;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+  header .secondary .community-interface img {
+    width: 100%;
+  }
+
+  main {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+  header {
+    background-image: url("../images/bg-hero-desktop.svg");
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

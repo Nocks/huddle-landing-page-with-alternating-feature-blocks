@@ -1,0 +1,117 @@
+$primary-font: 'Open Sans', sans-serif;
+$heading-font: 'Poppins', sans-serif;
+
+$pink: hsl(322, 100%, 66%);
+$pale-cyan: hsl(193, 100%, 96%);
+$dark-cyan: hsl(192, 100%, 9%);
+$grayish-blue: hsl(208, 11%, 55%);
+
+body {
+  font-family: $primary-font;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: $grayish-blue;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $heading-font;
+}
+
+header {
+  background-color: $pale-cyan;
+  background-size: cover;
+  background-position: top;
+
+  .primary .logo {
+    width: 6.5rem;
+  }
+
+  .secondary {
+
+  }
+}
+
+.btn-call-to-action {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: $dark-cyan;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 28px;
+  -webkit-box-shadow: 4px 7px 14px -8px rgba(0,37,46,0.2);
+  -moz-box-shadow: 4px 7px 14px -8px rgba(0,37,46,0.2);
+  box-shadow: 4px 7px 14px -8px rgba(0,37,46,0.2);
+}
+
+img {
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+  header {
+    background-image: url("../images/bg-hero-mobile.svg");
+    padding: 2rem 1rem 1rem 1rem;
+    margin-bottom: 3.5rem;
+
+    .primary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .primary .first-call-to-action button {
+      width: 7rem;
+      padding: 9px 15px;
+      font-size: 0.8rem;
+    }
+
+    .secondary {
+      margin-top: 50px;
+      color: $dark-cyan;
+      text-align: center;
+      padding: 1rem;
+
+        .message {
+          h1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 1.4rem;
+          }
+
+          .message-heading {
+            margin-bottom: 10px;
+          }
+
+          button {
+            width: 14rem;
+            padding: 12px 22px;
+            font-size: 0.9rem;
+            background-color: $pink;
+            color: #fff;
+            margin-top: 10px;
+            margin-bottom: 60px;
+          }
+        }
+
+      .community-interface img {
+        width: 100%;
+      }
+    }
+  }
+
+  main {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+
+  header {
+    background-image: url("../images/bg-hero-desktop.svg");
+  }
+}
