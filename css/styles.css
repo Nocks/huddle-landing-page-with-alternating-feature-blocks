@@ -37,13 +37,6 @@ img {
 
 footer {
   background-color: #00252e;
-  padding-top: 150px;
-}
-footer .logo img {
-  width: 180px;
-}
-footer img {
-  width: 5%;
 }
 
 @media screen and (max-width: 375px) {
@@ -78,16 +71,16 @@ footer img {
     margin-bottom: 10px;
   }
   header .secondary .message button {
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  .btn-pink {
     width: 14rem;
     padding: 12px 22px;
     font-size: 0.9rem;
     background-color: #ff52bf;
     color: #fff;
-    margin-top: 10px;
-    margin-bottom: 60px;
-  }
-  header .secondary .community-interface img {
-    width: 100%;
   }
 
   main {
@@ -144,18 +137,82 @@ footer img {
     color: #00252e;
     font-size: 1.2rem;
   }
-  .bottom-call-to-action button {
-    width: 14rem;
-    padding: 12px 22px;
-    font-size: 0.9rem;
-    background-color: #ff52bf;
-    color: #fff;
-  }
 
   footer {
     position: relative;
-    padding-left: 10px;
+    padding-top: 150px;
     padding-right: 10px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 1rem;
+  }
+  footer .main-wrapper {
+    padding-left: 15px;
+  }
+  footer .first .logo {
+    margin-bottom: 15px;
+  }
+  footer .first .logo img {
+    width: 200px;
+  }
+  footer .first .item-container {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  footer .first .item-container p {
+    margin-left: 25px;
+    align-self: baseline;
+  }
+  footer .first .icon {
+    width: 20px;
+    align-self: baseline;
+  }
+  footer .fourth {
+    height: 70px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .fourth .fab {
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  footer .fourth .fab:last-child {
+    margin-right: 0;
+  }
+  footer .secondary {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  footer .attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  footer .attribution a:link {
+    color: #fff;
+    text-decoration: none;
+  }
+  footer .attribution a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  footer .attribution a:active {
+    color: #fff;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 1440px) {
