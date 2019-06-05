@@ -256,9 +256,44 @@ footer {
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 1440px) {
+@media all and (min-width: 376px) and (max-width: 1440px) {
 
   header {
     background-image: url("../images/bg-hero-desktop.svg");
+
+    padding: 3rem 3rem 3rem 3rem;
+
+      .primary {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+      }
+
+      .secondary {
+        display: flex;
+        justify-content: space-between;
+        color: $dark-cyan;
+
+          .message {
+
+            padding-top: 3rem;
+
+              h1 {
+                height: 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                font-size: 2rem;
+              }
+
+              p {
+                padding-right: 12rem;
+              }
+          }
+
+          .community-interface {
+            margin-left: 40px;
+          }
+      }
   }
 }

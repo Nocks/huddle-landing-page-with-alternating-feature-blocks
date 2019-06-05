@@ -215,9 +215,36 @@ footer {
     text-decoration: none;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 1440px) {
+@media all and (min-width: 376px) and (max-width: 1440px) {
   header {
     background-image: url("../images/bg-hero-desktop.svg");
+    padding: 3rem 3rem 3rem 3rem;
+  }
+  header .primary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+  header .secondary {
+    display: flex;
+    justify-content: space-between;
+    color: #00252e;
+  }
+  header .secondary .message {
+    padding-top: 3rem;
+  }
+  header .secondary .message h1 {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2rem;
+  }
+  header .secondary .message p {
+    padding-right: 12rem;
+  }
+  header .secondary .community-interface {
+    margin-left: 40px;
   }
 }
 
