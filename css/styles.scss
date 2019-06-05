@@ -9,7 +9,7 @@ $grayish-blue: hsl(208, 11%, 55%);
 body {
   font-family: $primary-font;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.5rem;
   color: $grayish-blue;
 }
 
@@ -21,13 +21,10 @@ header {
   background-color: $pale-cyan;
   background-size: cover;
   background-position: top;
+  // margin-bottom: 6rem;
 
   .primary .logo {
     width: 6.5rem;
-  }
-
-  .secondary {
-
   }
 }
 
@@ -48,6 +45,18 @@ img {
   width: 100%;
 }
 
+footer {
+  background-color: $dark-cyan;
+  padding-top: 150px;
+
+    .logo img {
+      width: 180px;
+    }
+
+    img {
+      width: 5%;
+    }
+}
 
 
 @media screen and (max-width: 375px) {
@@ -55,7 +64,7 @@ img {
   header {
     background-image: url("../images/bg-hero-mobile.svg");
     padding: 2rem 1rem 1rem 1rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
 
     .primary {
       display: flex;
@@ -105,7 +114,77 @@ img {
   }
 
   main {
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem 1.2rem 1rem 1.2rem;
+  }
+
+  .benefit {
+    padding: 60px 35px 25px 35px;
+    text-align: center;
+    border: none;
+    border-radius: 18px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+  }
+
+  .benefit-image {
+    margin-bottom: 60px;
+  }
+
+  .benefit-message {
+
+      h2 {
+        color: $dark-cyan;
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+  }
+
+  .last-benefit {
+    margin-bottom: 200px;
+  }
+
+  .bottom-call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 94%;
+    height: 180px;
+    position: absolute;
+    top: -110px;
+    background-color: #fff;
+    border: none;
+    border-radius: 18px;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+
+      h3 {
+        margin-top: 0;
+        color: $dark-cyan;
+        font-size: 1.2rem;
+      }
+
+      button {
+        width: 14rem;
+        padding: 12px 22px;
+        font-size: 0.9rem;
+        background-color: $pink;
+        color: #fff;
+      }
+  }
+
+  footer {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 

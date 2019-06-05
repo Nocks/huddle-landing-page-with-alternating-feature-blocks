@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.5rem;
   color: #808d99;
 }
 
@@ -17,6 +17,7 @@ header {
 header .primary .logo {
   width: 6.5rem;
 }
+
 .btn-call-to-action {
   border: none;
   text-align: center;
@@ -34,11 +35,22 @@ img {
   width: 100%;
 }
 
+footer {
+  background-color: #00252e;
+  padding-top: 150px;
+}
+footer .logo img {
+  width: 180px;
+}
+footer img {
+  width: 5%;
+}
+
 @media screen and (max-width: 375px) {
   header {
     background-image: url("../images/bg-hero-mobile.svg");
     padding: 2rem 1rem 1rem 1rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
   }
   header .primary {
     display: flex;
@@ -79,7 +91,71 @@ img {
   }
 
   main {
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem 1.2rem 1rem 1.2rem;
+  }
+
+  .benefit {
+    padding: 60px 35px 25px 35px;
+    text-align: center;
+    border: none;
+    border-radius: 18px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+    box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+  }
+
+  .benefit-image {
+    margin-bottom: 60px;
+  }
+
+  .benefit-message h2 {
+    color: #00252e;
+    font-size: 1.4rem;
+  }
+  .benefit-message p {
+    font-size: 1rem;
+  }
+
+  .last-benefit {
+    margin-bottom: 200px;
+  }
+
+  .bottom-call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 94%;
+    height: 180px;
+    position: absolute;
+    top: -110px;
+    background-color: #fff;
+    border: none;
+    border-radius: 18px;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+    box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+  }
+  .bottom-call-to-action h3 {
+    margin-top: 0;
+    color: #00252e;
+    font-size: 1.2rem;
+  }
+  .bottom-call-to-action button {
+    width: 14rem;
+    padding: 12px 22px;
+    font-size: 0.9rem;
+    background-color: #ff52bf;
+    color: #fff;
+  }
+
+  footer {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 1440px) {
