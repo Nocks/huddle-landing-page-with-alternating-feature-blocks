@@ -17,6 +17,38 @@ h1, h2, h3, h4, h5 {
   font-family: $heading-font;
 }
 
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  border: none;
+}
+
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.attribution {
+
+    a:link {
+      color: #fff;
+    }
+
+    a:visited {
+      color: #fff;
+    }
+
+    a:active {
+      color: #fff;
+    }
+}
+
 header {
   background-color: $pale-cyan;
   background-size: cover;
@@ -48,7 +80,335 @@ footer {
   background-color: $dark-cyan;
 }
 
-@media screen and (max-width: 375px) {
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  header {
+    background-image: url("../images/bg-hero-mobile.svg");
+    padding: 3rem 3rem 3rem 3rem;
+    margin-bottom: 6.5rem;
+
+      .primary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3.5rem;
+      }
+
+      .primary .logo {
+        width: 9rem;
+      }
+
+      .primary .first-call-to-action button {
+        width: 10rem;
+        padding: 12px 15px;
+        font-size: 0.8rem;
+      }
+
+      .secondary {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        color: $dark-cyan;
+        height: 300px;
+
+          .message {
+            align-self: baseline;
+            padding-right: 2rem;
+
+
+              h1 {
+                height: 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                font-size: 1.6rem;
+              }
+
+              p {
+                font-size: 1rem;
+                line-height: 1.3rem;
+              }
+
+              button {
+                font-size: 0.8rem;
+                margin-top: 10px;
+                margin-bottom: 60px;
+              }
+          }
+
+      }
+  }
+
+  .btn-pink {
+    width: 14rem;
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+    background-color: $pink;
+    color: #fff;
+  }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  header {
+    background-image: url("../images/bg-hero-mobile.svg");
+    padding: 2rem 1rem 1rem 1rem;
+    margin-bottom: 1.5rem;
+
+    .primary .logo {
+      width: 8rem;
+    }
+
+    .primary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .primary .first-call-to-action button {
+      width: 8rem;
+      padding: 12px 15px;
+      font-size: 0.9rem;
+    }
+
+    .secondary {
+      margin-top: 50px;
+      color: $dark-cyan;
+      text-align: center;
+      padding: 1rem;
+
+        img {
+          width: 80%;
+        }
+
+        .message {
+          h1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 2rem;
+          }
+
+          .message-heading {
+            margin-bottom: 18px;
+          }
+
+          button {
+            margin-top: 10px;
+            margin-bottom: 60px;
+          }
+        }
+    }
+  }
+
+  .btn-pink {
+    width: 14rem;
+    padding: 15px 22px;
+    font-size: 0.9rem;
+    background-color: $pink;
+    color: #fff;
+  }
+
+  main {
+    padding: 2rem 1.2rem 1rem 1.2rem;
+  }
+
+  .benefit {
+    padding: 60px 35px 25px 35px;
+    text-align: center;
+    border: none;
+    border-radius: 18px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+  }
+
+  .benefit-image {
+    margin-bottom: 60px;
+
+    img {
+      width: 60%;
+    }
+  }
+
+  .benefit-message {
+
+      h2 {
+        color: $dark-cyan;
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+  }
+
+  .last-benefit {
+    margin-bottom: 200px;
+  }
+
+  .bottom-call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 94%;
+    height: 180px;
+    position: absolute;
+    top: -110px;
+    background-color: #fff;
+    border: none;
+    border-radius: 18px;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+
+      button {
+        width: 17rem;
+      }
+
+      h3 {
+        margin-top: 0;
+        color: $dark-cyan;
+        font-size: 1.5rem;
+      }
+  }
+
+  footer {
+    position: relative;
+    padding-top: 150px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 1rem;
+
+      .main-wrapper {
+        padding-left: 15px;
+      }
+
+      .first {
+
+          .logo {
+            margin-bottom: 15px;
+          }
+
+          .logo img {
+            width: 220px;
+          }
+
+          .item-container {
+            display: flex;
+            align-items: flex-start;
+            align-content: flex-start;
+
+              p {
+                margin-left: 25px;
+                align-self: baseline;
+              }
+          }
+
+          .icon {
+            width: 20px;
+            align-self: baseline;
+          }
+      }
+
+      .fourth {
+        height: 70px;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+          .fab {
+            padding: 10px;
+            font-size: 20px;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            margin-right: 12px;
+
+              &:last-child {
+                margin-right: 0;
+              }
+          }
+      }
+
+      .secondary {
+        text-align: center;
+        font-size: 0.8rem;
+      }
+
+      .attribution {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8rem;
+      }
+  }
+}
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
 
   header {
     background-image: url("../images/bg-hero-mobile.svg");
@@ -237,89 +597,6 @@ footer {
         flex-direction: column;
         align-items: center;
         font-size: 0.8rem;
-
-          a:link {
-            color: #fff;
-            text-decoration: none;
-          }
-
-          a:visited {
-            color: #fff;
-            text-decoration: none;
-          }
-
-          a:active {
-            color: #fff;
-            text-decoration: none;
-          }
       }
-  }
-}
-
-@media all and (min-width: 376px) and (max-width: 1440px) {
-
-  header {
-    background-image: url("../images/bg-hero-desktop.svg");
-    padding: 3rem 3rem 3rem 3rem;
-    margin-bottom: 6.5rem;
-
-      .primary {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 3.5rem;
-      }
-
-      .primary .logo {
-        width: 9rem;
-      }
-
-      .primary .first-call-to-action button {
-        width: 10rem;
-        padding: 12px 15px;
-        font-size: 0.8rem;
-      }
-
-      .secondary {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        color: $dark-cyan;
-        height: 300px;
-
-          .message {
-            align-self: baseline;
-            padding-right: 2rem;
-
-
-              h1 {
-                height: 80px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                font-size: 1.6rem;
-              }
-
-              p {
-                font-size: 1rem;
-                line-height: 1.3rem;
-              }
-
-              button {
-                font-size: 0.8rem;
-                margin-top: 10px;
-                margin-bottom: 60px;
-              }
-          }
-
-      }
-  }
-
-  .btn-pink {
-    width: 14rem;
-    padding: 1rem 1.2rem;
-    font-size: 0.9rem;
-    background-color: $pink;
-    color: #fff;
   }
 }
