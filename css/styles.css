@@ -219,32 +219,56 @@ footer {
   header {
     background-image: url("../images/bg-hero-desktop.svg");
     padding: 3rem 3rem 3rem 3rem;
+    margin-bottom: 6.5rem;
   }
   header .primary {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2.5rem;
+    align-items: center;
+    margin-bottom: 3.5rem;
+  }
+  header .primary .logo {
+    width: 9rem;
+  }
+  header .primary .first-call-to-action button {
+    width: 10rem;
+    padding: 12px 15px;
+    font-size: 0.8rem;
   }
   header .secondary {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
     color: #00252e;
+    height: 300px;
   }
   header .secondary .message {
-    padding-top: 3rem;
+    align-self: baseline;
+    padding-right: 2rem;
   }
   header .secondary .message h1 {
     height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   header .secondary .message p {
-    padding-right: 12rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
-  header .secondary .community-interface {
-    margin-left: 40px;
+  header .secondary .message button {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  .btn-pink {
+    width: 14rem;
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+    background-color: #ff52bf;
+    color: #fff;
   }
 }
 
