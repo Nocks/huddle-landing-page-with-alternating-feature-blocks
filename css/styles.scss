@@ -281,7 +281,8 @@ footer {
     padding-right: 10px;
     padding-left: 10px;
     color: #fff;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
 
       .main-wrapper {
         padding-left: 60px;
@@ -291,7 +292,6 @@ footer {
       .main {
         display: flex;
         justify-content: space-around;
-        line-height: 0.8rem;
       }
 
       .first {
@@ -361,15 +361,15 @@ footer {
       }
 
       .secondary {
-        text-align: center;
-        font-size: 0.8rem;
+        text-align: right;
       }
 
       .attribution {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+        padding-bottom: 10px;
       }
   }
 
