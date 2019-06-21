@@ -92,7 +92,7 @@ footer {
 @media (min-width: 1281px) {
 
   //CSS
-
+  
 }
 
 /*
@@ -102,7 +102,274 @@ footer {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-  //CSS
+  header {
+    background-image: url("../images/bg-hero-desktop.svg");
+    padding: 3rem 3rem 3rem 3rem;
+    margin-bottom: 3.5rem;
+
+      .primary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3.5rem;
+      }
+
+      .primary .logo {
+        width: 9rem;
+      }
+
+      .primary .first-call-to-action button {
+        width: 10rem;
+        padding: 12px 15px;
+        font-size: 0.8rem;
+      }
+
+      .secondary {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        color: $dark-cyan;
+        height: 400px;
+
+          .message {
+            align-self: flex-end;
+            padding-right: 2rem;
+            flex-basis: 40%;
+
+              h1 {
+                height: 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                font-size: 1.6rem;
+              }
+
+              p {
+                font-size: 1rem;
+                line-height: 1.3rem;
+              }
+
+              button {
+                font-size: 0.8rem;
+                margin-top: 10px;
+                margin-bottom: 60px;
+              }
+          }
+
+          .community-interface {
+            flex-basis: 60%;
+          }
+
+      }
+  }
+
+  .btn-pink {
+    width: 14rem;
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+    background-color: $pink;
+    color: #fff;
+  }
+
+  main {
+    padding: 4rem;
+  }
+
+  .benefit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 15px 25px 50px;
+    border: none;
+    border-radius: 18px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+  }
+
+  .benefit-image {
+
+    img {
+      width: 60%;
+    }
+  }
+
+  .benefit-message {
+
+      h2 {
+        color: $dark-cyan;
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+  }
+
+  .first-benefit {
+
+      .benefit-message {
+        order: 1;
+      }
+      .benefit-image {
+        order: 2;
+        display: flex;
+        justify-content: flex-end;
+      }
+  }
+
+  .second-benefit {
+
+      .benefit-message {
+        order: 2;
+      }
+      .benefit-image {
+        order: 1;
+      }
+  }
+
+  .last-benefit {
+    margin-bottom: 160px;
+
+      .benefit-message {
+        order: 1;
+      }
+      .benefit-image {
+        order: 2;
+        display: flex;
+        justify-content: flex-end;
+      }
+  }
+
+  .bottom-call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 65%;
+    height: 180px;
+    position: absolute;
+    top: -110px;
+    left: 18%;
+    background-color: #fff;
+    border: none;
+    border-radius: 18px;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+    box-shadow: 0px 0px 15px -4px rgba(0,37,46,0.16);
+
+      button {
+        width: 17rem;
+      }
+
+      h3 {
+        margin-top: 0;
+        color: $dark-cyan;
+        font-size: 1.2rem;
+      }
+  }
+
+  footer {
+    position: relative;
+    padding-top: 150px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+
+      .main-wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+
+      .logo {
+        margin-bottom: 15px;
+      }
+
+      .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .first {
+        flex-basis: 35%;
+        flex-grow: 0;
+        align-self: center;
+
+          .logo {
+            margin-bottom: 15px;
+          }
+
+          .logo img {
+            width: 150px;
+          }
+
+          .item-container {
+            display: flex;
+            align-items: flex-start;
+            align-content: flex-start;
+
+              p {
+                margin-left: 10px;
+                align-self: baseline;
+              }
+          }
+
+          .icon {
+            width: 10px;
+            align-self: baseline;
+          }
+      }
+
+      .fourth {
+        flex-basis: 20%;
+        flex-grow: 0;
+        height: 70px;
+        display: flex;
+
+          .fab {
+            padding: 5px;
+            font-size: 12px;
+            color: #fff;
+            width: 12px;
+            height: 12px;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            margin-right: 12px;
+
+              &:last-child {
+                margin-right: 0;
+              }
+          }
+      }
+
+      .secondary-wrapper {
+        padding-left: 60px;
+        display: flex;
+        justify-content: flex-end;
+
+        .secondary {
+          width: 23%;
+          padding-right: 20px;
+          font-size: 0.6rem;
+        }
+      }
+
+      .attribution {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.7rem;
+        padding-bottom: 10px;
+      }
+  }
 
 }
 
@@ -145,7 +412,7 @@ footer {
           .message {
             align-self: baseline;
             padding-right: 2rem;
-
+            flex-basis: 40%;
 
               h1 {
                 height: 80px;
@@ -165,6 +432,10 @@ footer {
                 margin-top: 10px;
                 margin-bottom: 60px;
               }
+          }
+
+          .community-interface {
+            flex-basis: 60%;
           }
 
       }
