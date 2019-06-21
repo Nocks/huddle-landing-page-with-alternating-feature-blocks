@@ -78,6 +78,10 @@ img {
 
 footer {
   background-color: $dark-cyan;
+
+  .logo img {
+    width: 150px;
+  }
 }
 
 /*
@@ -289,13 +293,18 @@ footer {
         padding-right: 60px;
       }
 
+      .logo {
+        margin-bottom: 15px;
+      }
+
       .main {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: baseline;
       }
 
       .first {
-        flex-basis: 25%;
+        flex-basis: 35%;
         flex-grow: 0;
         align-self: center;
 
@@ -324,23 +333,11 @@ footer {
           }
       }
 
-      .second {
-
-      }
-
-      .third {
-
-      }
-
       .fourth {
-        flex-basis: 25%;
+        flex-basis: 20%;
         flex-grow: 0;
         height: 70px;
-        margin-top: 40px;
-        margin-bottom: 20px;
         display: flex;
-        justify-content: center;
-        align-items: center;
 
           .fab {
             padding: 5px;
@@ -360,8 +357,16 @@ footer {
           }
       }
 
-      .secondary {
-        text-align: right;
+      .secondary-wrapper {
+        padding-left: 60px;
+        display: flex;
+        justify-content: flex-end;
+
+        .secondary {
+          width: 25%;
+          padding-right: 20px;
+          font-size: 0.5rem;
+        }
       }
 
       .attribution {

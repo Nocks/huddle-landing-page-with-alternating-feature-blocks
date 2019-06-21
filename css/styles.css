@@ -65,6 +65,9 @@ img {
 footer {
   background-color: #00252e;
 }
+footer .logo img {
+  width: 150px;
+}
 
 /*
   ##Device = Desktops
@@ -232,12 +235,16 @@ footer {
     padding-left: 60px;
     padding-right: 60px;
   }
+  footer .logo {
+    margin-bottom: 15px;
+  }
   footer .main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: baseline;
   }
   footer .first {
-    flex-basis: 25%;
+    flex-basis: 35%;
     flex-grow: 0;
     align-self: center;
   }
@@ -261,14 +268,10 @@ footer {
     align-self: baseline;
   }
   footer .fourth {
-    flex-basis: 25%;
+    flex-basis: 20%;
     flex-grow: 0;
     height: 70px;
-    margin-top: 40px;
-    margin-bottom: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   footer .fourth .fab {
     padding: 5px;
@@ -285,8 +288,15 @@ footer {
   footer .fourth .fab:last-child {
     margin-right: 0;
   }
-  footer .secondary {
-    text-align: right;
+  footer .secondary-wrapper {
+    padding-left: 60px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer .secondary-wrapper .secondary {
+    width: 25%;
+    padding-right: 20px;
+    font-size: 0.5rem;
   }
   footer .attribution {
     display: flex;
