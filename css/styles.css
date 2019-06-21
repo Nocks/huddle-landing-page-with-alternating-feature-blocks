@@ -73,6 +73,236 @@ footer .logo img {
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
+@media (min-width: 1281px) {
+  header {
+    background-image: url("../images/bg-hero-desktop.svg");
+    padding: 3rem 3rem 3rem 3rem;
+    margin-bottom: 2.5rem;
+  }
+  header .primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.5rem;
+  }
+  header .primary .logo {
+    width: 12rem;
+  }
+  header .primary .first-call-to-action button {
+    width: 12rem;
+    padding: 15px 18px;
+    font-size: 0.9rem;
+  }
+  header .secondary {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #00252e;
+    height: 500px;
+  }
+  header .secondary .message {
+    align-self: flex-end;
+    padding-right: 2rem;
+    flex-basis: 45%;
+  }
+  header .secondary .message h1 {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2rem;
+  }
+  header .secondary .message p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  header .secondary .message button {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+  header .secondary .community-interface {
+    flex-basis: 55%;
+  }
+
+  .btn-pink {
+    width: 14rem;
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+    background-color: #ff52bf;
+    color: #fff;
+  }
+
+  main {
+    padding: 4rem;
+  }
+
+  .benefit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 15px 25px 50px;
+    border: none;
+    border-radius: 18px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+    box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+  }
+
+  .benefit-image img {
+    width: 60%;
+  }
+
+  .benefit-message h2 {
+    color: #00252e;
+    font-size: 2rem;
+  }
+  .benefit-message p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .first-benefit .benefit-message {
+    order: 1;
+  }
+  .first-benefit .benefit-image {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .second-benefit .benefit-message {
+    order: 2;
+  }
+  .second-benefit .benefit-image {
+    order: 1;
+  }
+
+  .last-benefit {
+    margin-bottom: 160px;
+  }
+  .last-benefit .benefit-message {
+    order: 1;
+  }
+  .last-benefit .benefit-image {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bottom-call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 65%;
+    height: 180px;
+    position: absolute;
+    top: -110px;
+    left: 18%;
+    background-color: #fff;
+    border: none;
+    border-radius: 18px;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+    box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
+  }
+  .bottom-call-to-action button {
+    width: 17rem;
+  }
+  .bottom-call-to-action h3 {
+    margin-top: 0;
+    color: #00252e;
+    font-size: 1.5rem;
+  }
+
+  footer {
+    position: relative;
+    padding-top: 150px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+  }
+  footer .main-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  footer .logo {
+    margin-bottom: 15px;
+  }
+  footer .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  footer .first {
+    flex-basis: 35%;
+    flex-grow: 0;
+    align-self: center;
+  }
+  footer .first .logo {
+    margin-bottom: 15px;
+  }
+  footer .first .logo img {
+    width: 150px;
+  }
+  footer .first .item-container {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  footer .first .item-container p {
+    margin-left: 10px;
+    align-self: baseline;
+  }
+  footer .first .icon {
+    width: 10px;
+    align-self: baseline;
+  }
+  footer .fourth {
+    flex-basis: 20%;
+    flex-grow: 0;
+    height: 70px;
+    display: flex;
+  }
+  footer .fourth .fab {
+    padding: 5px;
+    font-size: 12px;
+    color: #fff;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  footer .fourth .fab:last-child {
+    margin-right: 0;
+  }
+  footer .secondary-wrapper {
+    padding-left: 60px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer .secondary-wrapper .secondary {
+    width: 23%;
+    padding-right: 20px;
+    font-size: 0.7rem;
+  }
+  footer .attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+    padding-bottom: 10px;
+  }
+}
 /*
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
